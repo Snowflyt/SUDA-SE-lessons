@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+**/*.class
+**/*.pyc
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
