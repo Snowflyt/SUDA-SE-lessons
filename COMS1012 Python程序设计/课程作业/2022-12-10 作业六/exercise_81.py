@@ -7,42 +7,49 @@
 """
 
 
-def assignment81(goods: dict[int, tuple[str, float]]) -> None:
+def assignment81(goods: dict[str, float]) -> None:
     """购物小程序"""
 
-    # step1: 打印商品信息
-    print('序号\t商品名称\t单价')
-    for key, good in goods.items():
-        print(f'{key}\t{good[0]}\t\t{good[1]}')
+    # step1: 将商品信息转换成元组列表
+    goods_list = list(goods.items())
 
-    # step2: 键盘输入序号
-    key = int(input('请输入商品序号: '))
+    # step2: 对step1产生的商品信息元组列表根据商品名称进行升序排序
+    goods_list.sort(key=lambda x: x[0])
 
-    # step3: 通过序号查找商品，并加入购物车，直到输入0代表结束
-    cart: dict[int, int] = {}
-    while key != 0:
-        # 通过序号查找商品
-        if key not in goods:
-            print('商品不存在，请重新输入')
-            continue
-        # 加入购物车
-        cart[key] = cart.get(key, 0) + 1
-        # 继续输入序号
-        key = int(input('请输入商品序号: '))
+    # step3: 商品选择
+    # 提示：因为要考虑同一个商品购买多个，所以要考虑购买数量的存储，为此建议用字典表示购物车
+    #      字典关键字为商品名称，值为购买商品的数量
+    cart = {}
+    while True:
+        # step3.1: 将排序后的商品信息按顺序显示在屏幕上，内容：商品下标+1,商品名称，商品单价，一行一个商品
+        print('序号\t商品名称\t商品单价')
+        for index, item in enumerate(goods_list):
+            print('{}\t{}\t{}'.format(index + 1, item[0], item[1]))
 
-    # step4: 结束后，显示所有购物车的信息 包括商品名称、单价、购买数量和小计金额，以及所有购物车内商品的总价
+        # step3.2: 提示用户通过输入商品序号选择商品
+        choice = int(input('请输入商品序号: '))
+
+        # step3.3: 如果用户输入0，则退出循环
+        if choice == 0:
+            break
+        else:
+            # step4.4 将选择的商品加入购物车
+            # 1. 判断购物车中是否已经有该商品
+            # 2. 如果没有，将该商品加入购物车，购买数量为1
+            # 3. 如果有，购买数量加1
+            good_name = goods_list[choice - 1][0]
+            cart[good_name] = cart.get(good_name, 0) + 1
+
+    # step4: 选择结束后，显示所有购物车的信息
+    # 包括商品名称、单价、购买数量和小计金额，以及购物车内所有商品的总价
     print('商品名称\t单价\t购买数量\t小计金额')
-    total: float = 0
-    for good_id, amount in cart.items():
-        name, price = goods[good_id]
-        total += price * amount
-        print(f'{name}\t\t{price}\t\t{amount}\t\t{price * amount}')
-    print(f'总价: {total}')
+    total = 0
+    for good_name, count in cart.items():
+        price = goods[good_name]
+        total += price * count
+        print('{}\t{}\t{}\t{}'.format(good_name, price, count, price * count))
+    print('总价: {}'.format(total))
 
 
 if __name__ == '__main__':
-    good_list = ['cola', 'chips', 'pen', 'toy']
-    price_list: list[float] = [3, 5, 2, 10]
-    id_list = [1, 2, 3, 4]
-    dct = dict(zip(id_list, zip(good_list, price_list)))
-    assignment81(dct)
+    assignment81({'cola': 3, 'chips': 5, 'pen': 2, 'toy': 10})

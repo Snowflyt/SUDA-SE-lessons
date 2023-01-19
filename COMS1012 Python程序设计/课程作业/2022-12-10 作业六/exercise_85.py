@@ -36,7 +36,7 @@ def assignment85(num_set_a: set[int], num_set_b: set[int]) -> None:
             break
         print('答案错误')
     else:
-        print('正确答案为：')
+        print('正确答案为:')
         print('A|B:', num_set_a | num_set_b)
         print('A&B:', num_set_a & num_set_b)
 
