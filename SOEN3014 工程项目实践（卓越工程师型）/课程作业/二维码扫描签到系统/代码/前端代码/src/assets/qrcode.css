@@ -1,0 +1,5 @@
+.impowerBox .qrcode {width: 200px;}
+.impowerBox .title {display: none;}
+.impowerBox .info {display: none;}
+.status_icon {display: none  !important}
+.impowerBox .status {display: none;} 

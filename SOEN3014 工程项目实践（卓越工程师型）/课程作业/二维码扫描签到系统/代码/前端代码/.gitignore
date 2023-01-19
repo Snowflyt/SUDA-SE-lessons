@@ -1,0 +1,14 @@
+*.iml
+node_modules
+
+.idea
+docs/.vuepress/dist
+**/dist
+.classpath
+.factorypath
+.vscode
+.settings
+.project
+vue-element-admin/
+vue-admin-template/
+vue-admin-template-tabnav/

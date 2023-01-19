@@ -1,0 +1,74 @@
+{
+  "name": "assemblyline-qrcode-product-management-system-terminal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js && concurrently \"webpack --watch --config webpack.dev.js\" \"electron .\"",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "webpack --config webpack.prod.js & electron-builder",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://codehub.devcloud.cn-north-4.huaweicloud.com/lsxewmcpglxt00001/assemblyline-qrcode-product-management-system-terminal.git"
+  },
+  "author": "Snowflyt",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/lodash": "^4.14.191",
+    "@types/qrcode": "^1.5.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.6.0",
+    "date-fns": "^2.29.3",
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "electron-reloader": "^1.2.3",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-react": "^7.31.11",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "lodash": "^4.17.21",
+    "prettier": "^2.8.1",
+    "source-map-loader": "^4.0.1",
+    "ts-jest": "^29.0.3",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.10.17",
+    "axios": "^1.2.1",
+    "echarts": "^5.4.1",
+    "immer": "^9.0.16",
+    "material-react-table": "^1.4.3",
+    "qrcode": "^1.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.5"
+  },
+  "build": {
+    "appId": "com.snowflyt.qrcodesystem",
+    "productName": "Assembly-Line-Qrcode-Product-Management-System-Terminal",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "./dist",
+      "./index.html"
+    ]
+  }
+}

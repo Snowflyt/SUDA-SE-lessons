@@ -1,0 +1,19 @@
+debug: true
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/webflash?useUnicode=true&characterEncoding=UTF8&useSSL=false
+      username: webflash
+      password: 123456
+  jpa:
+    hibernate:
+      ## 生产环境建议去掉改配置
+      ddl-auto: update
+  activiti:
+    check-process-definitions: false
+    database-schema-update: update
+    history-level: full
+    db-history-used: true
+server:
+  tomcat:
+    basedir: /data/app/web-flash/runtime/tmp/
