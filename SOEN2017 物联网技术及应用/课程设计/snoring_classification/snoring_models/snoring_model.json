@@ -1,0 +1,52 @@
+{
+  "name": "yamnet/classification",
+  "description": "Recognizes sound events",
+  "version": "v1",
+  "subgraph_metadata": [
+    {
+      "input_tensor_metadata": [
+        {
+          "name": "audio_clip",
+          "description": "Input audio clip to be classified.",
+          "content": {
+            "content_properties_type": "AudioProperties",
+            "content_properties": {
+              "sample_rate": 16000,
+              "channels": 1
+            }
+          },
+          "stats": {
+          }
+        }
+      ],
+      "output_tensor_metadata": [
+        {
+          "name": "custom",
+          "description": "Scores in range 0..1.0 for each output classes.",
+          "content": {
+            "content_properties_type": "FeatureProperties",
+            "content_properties": {
+            }
+          },
+          "stats": {
+            "max": [
+              1.0
+            ],
+            "min": [
+              0.0
+            ]
+          },
+          "associated_files": [
+            {
+              "name": "custom_labels.txt",
+              "description": "Labels for categories that the model can recognize.",
+              "type": "TENSOR_AXIS_LABELS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "author": "TensorFlow Lite Model Maker",
+  "license": "Apache License. Version 2.0 http://www.apache.org/licenses/LICENSE-2.0."
+}
