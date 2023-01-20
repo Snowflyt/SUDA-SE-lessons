@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>四则运算</title>
+  </head>
+  <body>
+    <div id="readme">
+      <h2>
+        欢迎来到四则运算测试程序，请在下面的文本框中输入您要测试的题目的数目，点击“开始”按钮开始测试
+      </h2>
+      <input type="number" id="question-num" />
+      <button type="button" id="start-button">开始</button>
+    </div>
+
+    <div id="test">
+      <h1>请在下面的文本框中，输入问题的答案</h1>
+      <div id="question">
+        <h2>1+2=</h2>
+      </div>
+      <div>
+        <input type="number" id="answer" />
+        <button type="button" id="next-button">下一题</button>
+        <button type="button" id="commit-button">提交</button>
+      </div>
+    </div>
+
+    <div id="result">
+      <h2>
+        您回答了<span id="answered-questions"></span>题，共<span
+          id="total-questions"
+        ></span
+        >题，答对<span id="correct-answers"></span>题
+      </h2>
+      <h2 id="result-info">其中</h2>
+      <div id="result-details"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

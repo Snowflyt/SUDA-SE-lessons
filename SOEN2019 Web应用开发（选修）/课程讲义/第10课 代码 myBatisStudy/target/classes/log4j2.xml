@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%5level [%t] - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="cn.suda.edu" level="trace"/>
+        <Root level="error" >
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

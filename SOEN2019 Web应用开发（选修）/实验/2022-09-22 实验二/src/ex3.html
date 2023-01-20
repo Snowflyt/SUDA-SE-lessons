@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+      .box div {
+        margin: 5px;
+        background-color: #808080;
+      }
+      .box .top {
+        height: 40px;
+      }
+      .box .banner {
+        height: 100px;
+      }
+      .box .content {
+        display: flex;
+        background-color: #ffc0cb;
+      }
+      .box .content div {
+        margin: 0 0 0 10px;
+        width: 25%;
+        aspect-ratio: 2 / 3;
+        background-color: #808080;
+      }
+      .box .content div:nth-child(1) {
+        margin-left: 0;
+      }
+      .box .footer {
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="top">top</div>
+      <div class="banner">banner</div>
+      <div class="content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>

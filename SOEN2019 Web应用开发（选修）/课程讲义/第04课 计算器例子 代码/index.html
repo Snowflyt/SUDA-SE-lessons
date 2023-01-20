@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basics</title>
+
+    <link rel="stylesheet" href="assets/styles/layout.css" />
+  </head>
+  <body>
+    <header>
+      <h1>计算器</h1>
+    </header>
+
+    <section id="calculator">
+      <input type="number" id="input-number" />
+      <div id="calc-actions">
+        <button type="button" id="btn-add">+</button>
+        <button type="button" id="btn-subtract">-</button>
+        <button type="button" id="btn-multiply">*</button>
+        <button type="button" id="btn-divide">/</button>
+      </div>
+    </section>
+    <section id="results">
+      <pre id="current-calculation">0</pre>
+      <h2>结果: <span id="current-result">0</span></h2>
+    </section>
+    <script src="assets/scripts/showElement.js"></script>
+    <script src="assets/scripts/myapp.js"></script>
+  </body>
+</html>

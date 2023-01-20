@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J2"/>
+    </settings>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+                <property name="url" value="jdbc:sqlserver://127.0.0.1:1433;encrypt=false;DatabaseName=suda"/>
+                <property name="username" value="study"/>
+                <property name="password" value="1qaz@WSX"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="cn/edu/suda/mapper/studentMapper.xml"></mapper>
+        <mapper resource="cn/edu/suda/mapper/bjMapper.xml"></mapper>
+    </mappers>
+</configuration>

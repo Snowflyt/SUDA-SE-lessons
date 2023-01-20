@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snowflyt.mybatisdemo.repository.student">
+    <select id="selectClazz" resultType="Clazz">
+        SELECT * FROM `clazz` WHERE `id` = #{id}
+    </select>
+
+    <select id="selectAllClazzes" resultType="Clazz">
+        SELECT * FROM `clazz`
+    </select>
+
+    <insert id="insertClazz" parameterType="Clazz">
+        INSERT INTO `clazz` (`id`, `name`)
+        VALUES (#{id}, #{name})
+    </insert>
+
+    <update id="updateClazz" parameterType="Clazz">
+        UPDATE `clazz`
+        SET `name` = #{name}
+        WHERE `id` = #{id}
+    </update>
+
+    <delete id="deleteClazz" parameterType="Long">
+        DELETE FROM `clazz` WHERE `id` = #{id}
+    </delete>
+</mapper>

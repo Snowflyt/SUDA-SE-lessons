@@ -1,0 +1,15 @@
+.result-details * {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 2;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.result-detail-correct {
+  background-color: #02a7f0;
+}
+
+.result-detail-wrong {
+  background-color: #d9001b;
+}

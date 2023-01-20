@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties"/>
+    <settings>
+        <setting name="logImpl" value="SLF4J"/>
+    </settings>
+    <typeAliases>
+        <package name="com.snowflyt.mybatisdemo.entity"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="com/snowflyt/mybatisdemo/mapper/ClazzMapper.xml"/>
+        <mapper resource="com/snowflyt/mybatisdemo/mapper/StudentMapper.xml"/>
+    </mappers>
+</configuration>

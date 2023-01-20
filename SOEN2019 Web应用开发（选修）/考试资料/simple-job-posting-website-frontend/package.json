@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.2",
+    "nuxt": "3.0.0",
+    "sass": "^1.57.1",
+    "unplugin-element-plus": "^0.4.1"
+  },
+  "dependencies": {
+    "@element-plus/icons": "^0.0.11",
+    "@element-plus/icons-vue": "^2.0.10",
+    "axios": "^1.2.2",
+    "element-plus": "^2.2.28",
+    "js-cookie": "^3.0.1"
+  }
+}
