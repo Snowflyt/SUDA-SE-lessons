@@ -1,0 +1,36 @@
+android:id/button1
+//android.widget.Button[@text='确定']
+io.github.gsantner.memetastic:id/item__square_image__image
+io.github.gsantner.memetastic:id/action_share
+android:id/text1
+//android.widget.TextView[@text='Create Meme']
+io.github.gsantner.memetastic:id/action_save
+android:id/button3
+//android.widget.Button[@text='Share Meme']
+android:id/text1
+//android.widget.TextView[@text='Create Meme']
+io.github.gsantner.memetastic:id/action_save
+android:id/button2
+//android.widget.Button[@text='Keep editing']
+io.github.gsantner.memetastic:id/action_save
+android:id/button1
+//android.widget.Button[@text='yes']
+io.github.gsantner.memetastic:id/fab
+io.github.gsantner.memetastic:id/memecreate__moar_controls__rotate_plus_90deg
+//android.widget.Button[@text='Rotate']
+io.github.gsantner.memetastic:id/memecreate__moar_controls__rotate_plus_90deg
+//android.widget.Button[@text='Rotate']
+io.github.gsantner.memetastic:id/memecreate__moar_controls__rotate_plus_90deg
+//android.widget.Button[@text='Rotate']
+io.github.gsantner.memetastic:id/memecreate__moar_controls__rotate_plus_90deg
+//android.widget.Button[@text='Rotate']
+io.github.gsantner.memetastic:id/memecreate__moar_controls__seek_padding_size
+io.github.gsantner.memetastic:id/memecreate__moar_controls__color_picker_for_padding
+io.github.gsantner.memetastic:id/cpv_color_panel_view
+android:id/button3
+//android.widget.Button[@text='Palette']
+io.github.gsantner.memetastic:id/cpv_hex
+//android.widget.EditText[@text='F44336']
+android:id/button1
+//android.widget.Button[@text='确定']
+io.github.gsantner.memetastic:id/fab

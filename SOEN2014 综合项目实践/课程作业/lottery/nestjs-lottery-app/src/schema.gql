@@ -1,0 +1,120 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreatePermissionInput {
+  description: String
+  name: String!
+}
+
+input CreateRoleInput {
+  description: String
+  name: String!
+  permissionNames: [String!]
+}
+
+input CreateUserInput {
+  password: String!
+  roleNames: [String!]!
+  username: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input LoginInput {
+  password: String
+  username: String!
+}
+
+type LoginOutput {
+  token: String!
+  user: UserDto!
+}
+
+type Mutation {
+  addParticipant(name: String!): Participant!
+  createPermission(input: CreatePermissionInput!): PermissionDto!
+  createRole(input: CreateRoleInput!): RoleDto!
+  createUser(input: CreateUserInput!): UserDto!
+  draw(count: Int!, level: Int!): [Participant!]!
+  login(input: LoginInput!): LoginOutput!
+  removeParticipant(name: String!): Participant!
+  removePermission(id: Int!): PermissionDto!
+  removeRole(id: Int!): RoleDto!
+  removeUser(id: Int!): UserDto!
+  reset: Void!
+  setWinnersCount(first: Int, second: Int, third: Int): Void!
+  updatePermission(id: Int!, input: UpdatePermissionInput!): PermissionDto!
+  updateRole(id: Int!, input: UpdateRoleInput!): RoleDto!
+  updateUser(id: Int!, input: UpdateUserInput!): UserDto!
+}
+
+type Participant {
+  name: String!
+}
+
+type PermissionDto {
+  createdAt: DateTime!
+  description: String
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+type Query {
+  me: UserDto!
+  participants: [Participant!]!
+  permission(id: Int!): PermissionDto!
+  permissions: [PermissionDto!]!
+  role(id: Int!): RoleDto!
+  roles: [RoleDto!]!
+  user(id: Int!): UserDto!
+  users: [UserDto!]!
+  winnersCount: WinnersCount!
+}
+
+type RoleDto {
+  createdAt: DateTime!
+  description: String
+  id: Int!
+  name: String!
+  permissions: [PermissionDto!]!
+  updatedAt: DateTime!
+}
+
+input UpdatePermissionInput {
+  description: String
+  name: String
+}
+
+input UpdateRoleInput {
+  description: String
+  name: String
+  permissionNames: [String!]
+}
+
+input UpdateUserInput {
+  password: String
+  roleNames: [String!]
+  username: String
+}
+
+type UserDto {
+  createdAt: DateTime!
+  id: Int!
+  roles: [RoleDto!]!
+  updatedAt: DateTime!
+  username: String!
+}
+
+"""Represents NULL values"""
+scalar Void
+
+type WinnersCount {
+  first: Int!
+  second: Int!
+  third: Int!
+}

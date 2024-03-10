@@ -1,0 +1,4 @@
+Recommendation System-Oriented Finer-grained Sentiment Analysis, NSFC:61976114, 2020.1-2023.12.
+Research on Chinese Frame Semantic Computing Based on Linguistic
+Cognitive Mechanism, NSFC:61936012. 2020.1-2024.12
+Key Techniques and Systems for Solving Knowledge Association and Event Reasoning Problems, MOST：2018YFB1005102. 2019.05--2022.04.

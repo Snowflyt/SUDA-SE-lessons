@@ -1,0 +1,169 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    // NOTE: When using postgresql, mysql or sqlserver, uncomment the @db.Text annotations in model Account below
+    // Further reading:
+    // https://next-auth.js.org/adapters/prisma#create-the-prisma-schema
+    // https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference#string
+    url      = env("DATABASE_URL")
+}
+
+model Example {
+    id        String   @id @default(cuid())
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+// Necessary for Next auth
+model Account {
+    id                String  @id @default(cuid())
+    userId            String
+    type              String
+    provider          String
+    providerAccountId String
+    refresh_token     String? // @db.Text
+    access_token      String? // @db.Text
+    expires_at        Int?
+    token_type        String?
+    scope             String?
+    id_token          String? // @db.Text
+    session_state     String?
+    user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+    @@unique([provider, providerAccountId])
+}
+
+model Session {
+    id           String   @id @default(cuid())
+    sessionToken String   @unique
+    userId       String
+    expires      DateTime
+    user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+    id               String             @id @default(cuid())
+    studentNumber    String?            @unique
+    name             String?            @default("")
+    username         String             @unique
+    password         String
+    role             String
+    email            String?            @unique
+    emailVerified    DateTime?
+    image            String?
+    accounts         Account[]
+    sessions         Session[]
+    courseWares      CourseWare[]
+    studentCourses   Course[]           @relation("CourseStudents")
+    teacherCourses   Course[]
+    lessons          Lesson[]
+    AttendanceRecord AttendanceRecord[]
+    QuizReport       QuizRecord[]
+    File             File[]
+}
+
+model VerificationToken {
+    identifier String
+    token      String   @unique
+    expires    DateTime
+
+    @@unique([identifier, token])
+}
+
+model Course {
+    id             String       @id @default(cuid())
+    name           String
+    description    String       @default("")
+    startDate      DateTime
+    endDate        DateTime
+    invitationCode String
+    coursewares    CourseWare[]
+    lessons        Lesson[]
+    teacher        User         @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+    teacherId      String
+    students       User[]       @relation("CourseStudents")
+    Quiz           Quiz[]
+}
+
+model CourseWare {
+    id             String   @id @default(cuid())
+    uploader       User     @relation(fields: [uploaderId], references: [id], onDelete: Cascade)
+    uploaderId     String
+    course         Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+    courseId       String
+    name           String
+    classification String
+    uploadAt       DateTime @default(now())
+    file           File     @relation(fields: [fileId], references: [id], onDelete: Cascade)
+    fileId         String   @unique
+}
+
+model Lesson {
+    id               String             @id @default(cuid())
+    teacher          User               @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+    teacherId        String
+    roomId           String?
+    course           Course             @relation(fields: [courseId], references: [id], onDelete: Cascade)
+    courseId         String
+    name             String
+    startDateTime    DateTime
+    endDateTime      DateTime?
+    AttendanceRecord AttendanceRecord[]
+    QuizReport       QuizRecord[]
+}
+
+model AttendanceRecord {
+    id            String   @id @default(cuid())
+    student       User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+    studentId     String
+    lesson        Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+    lessonId      String
+    attendance_at DateTime @default(now())
+}
+
+model Quiz {
+    id             String       @id @default(cuid())
+    course         Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+    courseId       String
+    classification String
+    name           String
+    description    String
+    createdAt      DateTime     @default(now())
+    choices        Choice[]
+    QuizReport     QuizRecord[]
+}
+
+model Choice {
+    id          String  @id @default(cuid())
+    quiz        Quiz    @relation(fields: [quizId], references: [id], onDelete: Cascade)
+    quizId      String
+    description String
+    isAnswer    Boolean
+}
+
+model QuizRecord {
+    id        String  @id @default(cuid())
+    quiz      Quiz    @relation(fields: [quizId], references: [id], onDelete: Cascade)
+    quizId    String
+    lesson    Lesson  @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+    lessonId  String
+    student   User    @relation(fields: [studentId], references: [id], onDelete: Cascade)
+    studentId String
+    isCorrect Boolean
+}
+
+model File {
+    id         String      @id @default(cuid())
+    uploadedAt DateTime    @default(now())
+    filename   String
+    dataURL    String
+    uploader   User        @relation(fields: [uploaderId], references: [id], onDelete: Cascade)
+    uploaderId String
+    CourseWare CourseWare?
+}

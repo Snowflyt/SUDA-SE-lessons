@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "fastapi-ner-app"
+version = "0.1.1"
+description = ""
+authors = ["Snowfly-T <gaoge011022@163.com>"]
+readme = "README.md"
+packages = [{ include = "fastapi_ner_app" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.4"
+fastapi = "^0.110.0"
+uvicorn = { extras = ["standard"], version = "^0.27.1" }
+pandas = "^2.2.1"
+torch = "^2.2.1"
+pytorch-crf = "^0.7.2"
+scikit-learn = "^1.4.1.post1"
+
+[tool.poetry.scripts]
+start = "fastapi_ner_app.main:start"
+
+[tool.poetry.group.dev.dependencies]
+pandas-stubs = "^2.2.0.240218"
+ruff = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+preview = true
+extend-select = [
+    "A",
+    "ARG",
+    "ASYNC",
+    "B",
+    "C4",
+    "COM",
+    "EM",
+    "ERA",
+    "FLY",
+    "FURB",
+    "G",
+    "I",
+    "ICN",
+    "INP",
+    "ISC",
+    "N",
+    "NPY",
+    "PD",
+    "PERF",
+    "PIE",
+    "PGH",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "Q",
+    "RET",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "YTT",
+    "E501"
+]
+ignore = ["COM812", "ISC001", "TID252"]

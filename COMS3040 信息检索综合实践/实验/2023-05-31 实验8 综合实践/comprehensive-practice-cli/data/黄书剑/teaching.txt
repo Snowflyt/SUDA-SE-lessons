@@ -1,0 +1,5 @@
+Basic Programming
+Advanced Programming
+Programming for Artificial Intelligence
+Natural Language Processing (Machine Translation part)
+Machine Translation and Natural Language Generation

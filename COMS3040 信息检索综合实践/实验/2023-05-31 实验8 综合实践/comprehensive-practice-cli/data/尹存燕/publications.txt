@@ -1,0 +1,14 @@
+Yin Cunyan, Huang Shujian, Dai Xinyu, Chen Jiajun: Optimization of Chinese Word Segmentation in Chinese-English Named Entity Recognition and Alignment, Acta Electronica Sinica, 2015, 43(8), 1481-1487.
+Yin Cunyan, Huang Shu Jian, Dai Xinyu, Chen Jiajun: Named Entity Translation Extraction for Chinese-Japanese News Corpus, Journal of Small and Microcomputer Systems, 2015, 36(6):1393-1397.
+Zhang Liang, Yin Cunyan, Chen Jiajun: Semantic Tree-based Chinese Word Similarity Calculation and Analysis, Chinese Information Science, Vol. 24, No. 6, Nov. 2010.
+Haipeng Wang, Lin Shang, Xinyu Dai, Cunyan Yin: Finding Appropriate Turning Point for Text Sentiment Polarity. ICONIP (2) 2009: 754-761
+Zhang Liang, Yin Cunyan, Chen Jiajun: Semantic Tree-Based Chinese Word Similarity Calculation and Analysis, 10th National Conference on Computational Linguistics (CNCCL-2009), July 24-26, 2009, Yantai; "Frontiers of Chinese Computational Linguistics Research (2007-2009)", ed. by Sun Maosong and Chen Qunxiu, Beijing: Tsinghua University Press, 2009, 7.
+Extraction Method of Equivalent Pairs of Named Entity Translation by Chen Huai-Xing, Yin Cun-Yan and Chen Jia-Jun, Chinese Journal of Information Science, Vol. 22, No. 4, July 2008.
+Ni Ruiyu, Dai Xinyu, Yin Cunyan, Chen Jiajun: A Corpus-based Japanese Verb Frame Automatic Construction Technique, Computer Applications and Research, Vol. 24, No. 6, June 2007.
+Chinese Organizational Name Automatic Recognition Based on Stacked Conditional Random Field Model by Zhou Junsheng, Dai Xinyu, Yin Cunyan, Chen Jiajun, Acta Electronica Sinica, Vol. 34, No. 5, May 2006.
+A Machine Translation System from Japanese to Chinese Based on Grammar and Transformation Strategies, Chinese Information Science, Vol. 20, Supplement, March 2006.
+Research on Automatic Text Summarization Technology on the Internet by Yin Cunyan, Dai Xinyu and Chen Jiajun, Computer Engineering, Vol. 32, No. 3, February 2006.
+Sun Mingxin, Yin Cunyan, Dai Xinyu, Chen Jiajun: A Meta-Rule-Based Natural Language Generation Rule Interpretation Technology, Journal of Nanjing University (Natural Science Edition), Vol. 42, No. 1, January 2006.
+Combining Rule-Based and Bayesian Methods for Text Automatic Classification: A Study of Liu Jing, Yin Cunyan, and Chen Jiajun, Computer Applications Research, Vol. 22, No. 7, July 2005.
+Dai Xinyu, Yin Cunyan, Chen Jiajun, Zheng Guoliang: Research Status and Prospects of Machine Translation, Computer Science, Vol. 31, No. 11, November 2004.
+Zhao Wei, Dai Xinyu, Yin Cunyan, Chen Jiajun: A Chinese Word Segmentation Method Combining Rules and Statistics, Computer Applications Research, Vol. 21, No. 3, March 2004.

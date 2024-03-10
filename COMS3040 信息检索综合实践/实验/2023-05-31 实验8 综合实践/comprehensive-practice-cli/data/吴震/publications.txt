@@ -1,0 +1,7 @@
+Grid Tagging Scheme for Aspect-oriented Fine-grained Opinion Extraction Zhen Wu, Chengcan Ying, Fei Zhao, Zhifang Fan, Xinyu Dai, Rui Xia EMNLP Findings, 2020
+Latent Opinions Transfer Network for Target-Oriented Opinion Words Extraction Zhen Wu*, Fei Zhao*, Xin-Yu Dai, Shujian Huang, Jiajun Chen AAAI, 2020 (oral presentation)
+Attention Transfer Network for Aspect-level Sentiment Classification Fei Zhao*, Zhen Wu*, Xin-Yu Dai COLING, 2020
+Transformer-based Multi-Aspect Modeling for Multi-Aspect Multi-Sentiment Analysis Zhen Wu*, Chengcan Ying*, Xinyu Dai, Shujian Huang, Jiajun Chen NLPCC Evaluation, 2020
+Opinion Transmission Network for Jointly Improving Aspect-oriented Opinion Words Extraction and Sentiment Classification Chengcan Ying*, Zhen Wu*, Xinyu Dai, Shujian Huang, Jiajun Chen NLPCC, 2020
+Target-oriented Opinion Words Extraction with Target-fused Neural Sequence Labeling Zhifang Fan, Zhen Wu, Xin-Yu Dai, Shujian Huang, Jiajun Chen NAACL-HLT, 2019
+Improving Review Representations with User Attention and Product Attention for Sentiment Classification Zhen Wu, Xin-Yu Dai, Cunyan Yin, Shujian Huang, Jiajun Chen AAAI, 2018 (oral presentation)

@@ -1,0 +1,33 @@
+title:
+Home Page
+
+body:
+Home Page of Professor NG Hwee TouAffiliation
+Provost's Chair Professor
+Department of Computer Science
+School of Computing
+National University of Singapore
+13 Computing Drive
+Singapore 117417
+Tel: (65) 6516 8951
+Fax: (65) 6779 4580
+Email: nght@comp.nus.edu.sg
+Home Page: http://www.comp.nus.edu.sg/~nght
+Office: AS6 05-16
+Senior Faculty Member
+NUS Graduate School for Integrative Sciences and Engineering
+National University of Singapore
+Education
+Ph.D. in Computer Science, 1992
+University of Texas at Austin, U.S.A.
+M.S. in Computer Science, 1987
+Stanford University, U.S.A.
+B.Sc. in Computer Science for Data Management (High Distinction), 1985
+University of Toronto, Canada
+Bio
+Professor Hwee Tou NG is Provost's Chair Professor of Computer Science at the National University of Singapore (NUS) and a Senior Faculty Member at the NUS Graduate School for Integrative Sciences and Engineering. He received a PhD in Computer Science from the University of Texas at Austin, USA. His research focuses on natural language processing and information retrieval. He is a Fellow of the Association for Computational Linguistics (ACL).
+He has published papers in premier journals and conferences, including Computational Linguistics, Journal of Artificial Intelligence Research (JAIR), ACM Transactions on Information Systems (TOIS), ACL, NAACL, EMNLP, SIGIR, AAAI, and IJCAI. His papers received the Best Paper Award at EMNLP 2011 and SIGIR 1997. He is the editor-in-chief of Computational Linguistics, an editorial board member of Natural Language Engineering, and a steering committee member of ACL SIGNLL.
+He has also served as the editor-in-chief of ACM Transactions on Asian Language Information Processing (TALIP) (May 2007 − May 2013), an editorial board member of Computational Linguistics (Jan 2004 � Dec 2006) and Journal of Artificial Intelligence Research (JAIR) (Sep 2008 − Aug 2011), the book review editor of Computational Linguistics (Aug 2014 � Jul 2018), and an action editor of the Transactions of the Association for Computational Linguistics (TACL) (May 2012 � Jun 2018). He was an elected member of the ACL executive committee (Jan 2008 � Dec 2010) and a former secretary of ACL SIGNLL. He was program co-chair of EMNLP 2008, ACL 2005, and CoNLL 2004 conferences, and has served as area chair of ACL, NAACL, EACL, EMNLP, SIGIR, AAAI, and IJCAI conferences and as session chair and program committee member of many past conferences including ACL, EMNLP, SIGIR, AAAI, and IJCAI.At NUS, he currently serves as Deputy Director of Temasek Defence Systems Institute (TDSI), and he was formerly Program Co-Chair of the Singapore-MIT Alliance (SMA) Computer Science Program and Vice Dean (Research) of the School of Computing.
+Research Interests
+Natural Language Processing, Information Retrieval
+

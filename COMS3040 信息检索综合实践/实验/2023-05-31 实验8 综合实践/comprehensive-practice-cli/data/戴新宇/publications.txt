@@ -1,0 +1,53 @@
+Bin Wang, Jiangzhou Ju, Yang Fan, Xinyu Dai, et.al., Structure-Unified M-Tree Coding Solver for Math Word Problem, EMNLP'2022
+Fei Zhao, Yuchen Shen, Zhen Wu and Xinyu Dai, Label-Driven Denoising Framework for Multi-Label Few-Shot Aspect Category Detection,Findings of EMNLP'2022
+Siyu Long, Yi Zhou, Xinyu Dai, Hao Zhou, Zero-Shot 3D Drug Design by Sketching and Generating, NeurIPS'2022.
+Yawen Ouyang, Zhen Wu, Xinyu Dai, et.al., Towards Multi-label Unknown Intent Detection, COLING'2022.
+Fei Zhao, Zhen Wu, Siyu Long, et.al., Learning from Adjective-Noun Pairs: A Knowledge-enhanced Framework for Target-Oriented Multimodal Sentiment Classification, COLING'2022.
+Fei Zhao, Chunhui li, Zhen Wu,  et.al., Learning from Different text-image Pairs: A Relation-enhanced Graph Convolutional Network for Multimodal NER, ACM MM 2022.
+Ming Fang, Shi Zong, Jing Li, et.al., Analyzing the Intensity of Complaints on Social Media, Findings of NAACL'2022.
+Xi'ao Su, Ran Wang, Xinyu Daim, Contrastive Learning-Enhanced Nearest Neighbor Mechanism for Multi-Label Text Classification, ACL'2022 (Short Paper).
+Pengfei Sun, Yawen Ouyang, Dingjie Song, et.al., Self-Supervised Task Augmentation for Few-Shot Intent Detection, JSCT 2022:37 (3), 527-538.
+Zhen Wu, Xinyu Dai, Rui Xia, Pairwise Tagging Framework for End-to-End Emotion-Cause Pair Extraction, FCS, 2023:17 (2), 1-10.
+R Wang, X Su, S Long, X Dai，S Huang, J Chen, Meta-LMTC: Meta-Learning for Large-Scale Multi-Label Text Classification, EMNLP'2021
+X Chen, P Jin, L Qiu, J Zhang, X Dai and J CHEN, Automatic Detection of Machine-generated Texts Is Not Reliable, Findlings of EMNLP'2021
+Y Ouyang, J Ye, Y Chen, X Dai, S Huang, J Chen, Energy-based Unknown Intent Detection with Data Manipulation, Findlings of ACL'2021
+Z Wu, L Wu, Q Meng, Y Xia, S Xie, T Qin, X Dai, TY Liu. Unidrop: A simple yet effective technique to improve transformer without extra cost.NAACL'2021
+P Sun, Y Ouyang, W Zhang, X Dai, MEDA: Meta-Learning with Data Augmentation for Few-Shot Text Classification. IJCAI'2021
+B Fu, W Zhang, G Hu, X Dai, S Huang, J Chen. Dual Side Deep Context-aware Modulation for Social Recommendation. WWW'2021
+W Yuan, T He, X Dai. Improving Neural Question Generation using Deep Linguistic Representation.WWW'2021
+Y Cao, L He, R Ridley, X Dai. Integrating BERT and Score-based Feature Gates for Chinese Grammatical Error Diagnosis. NLPTEA'2020
+R Ridley, L He, X Dai, S Huang, J Chen. Automated Cross-prompt Scoring of Essay Traits, AAAI'2021
+R Wang, Robert Ridley, X Su, W Qu, X Dai. A Novel Reasoning Mechanism for Multi-Label Text Classification, Information Processing and Management 58(2), March 2021.
+Pengfei Sun, Yawen Ouyang, Xin-Yu Dai, et.al., Similarity Learning with Implicit-network and Explicit-network for Zero-shot Intent Detection. accepted by SCIENTIA SINCA Informatics(In Chinese). In press.
+Kaijia Yang, Nantao Zheng, Xin-Yu Dai, et. al., Enhance Prototypical Network with Text Descriptions for Few-shot Relation Classification, CIKM’2020. (short paper)
+Chengcan Yin, Zhen Wu, Xin-Yu Dai, et.al., Opinion Transmission Network for Jointly Improving Aspect-Oriented Opinion Words Extraction and Sentiment Classification, NLPCC’2020.
+Zhen Wu, Chengcan Yin, Xin-Yu Dai, et.al., Transformer-Based Multi-aspect Modeling for Multi-aspect Multi-sentiment Analysis, NLPCC’2020 Evaluation Workshop.
+Siyu Long, Ran Wang, et. al., Synonym Knowledge Enhanced Reader for Chinese Idiom Reading Comprehension. COLING’2020.
+Fei Zhao, Zhen Wu, Xin-Yu Dai, Attention Transfer Network for Aspect-level Sentiment Classification, COLING’2020.
+Zhen Wu, Chengcan Ying, et. al., Grid Tagging Scheme for Aspect-oriented Fine-grained Opinion Extraction, Findings of EMNLP’2020.
+Yawen Ouyang, Moxin Chen, Xinyu Dai, et.al., Dialogue State Tracking with Explicit Slot Connections Modeling, ACL'2020.(short paper)
+Danhao Zhu, Xin-Yu Dai, et.al., Sampling Informative Context Nodes for Network Embedding. Accepted by SCIENCE CHINA Information Sciences.
+Zhen Wu, Fei Zhao, Xin-Yu Dai, et.al., Latent Opinions Transfer Network for Target-Oriented Opinion Words Extraction. AAAI'2020.
+Chunyang Tan, Xin-Yu Dai, et.al., MSGE: A Multi-step Gated Model for Knowledge Graph Completion.PAKDD'2020
+Zhu, Danhao, Xin-Yu Dai, and Jiajun Chen. "Representing anything from scholar papers." Journal of Web Semantics 59 (2019): 100498.
+Dan-Hao Zhu, Xin-Yu Dai, Jia-Jun Chen. Pre-train and Learn: Preserving Global Information for Graph Neural Networks. JOURNAL OF COMPUTER SCIENCE AND TECHNOLOGY 33(1): 1–14.
+Zhifang Fan, Zhen Wu, XIN-YU DAI, Shujian Huang and Jiajun CHEN. Target-oriented Opinion Words Extraction with Target-fused Neural Sequence Labeling. NAACL'2019
+Kaijia Yang, Liang He, XIN-YU DAI, Shujian Huang and Jiajun CHEN. Exploiting Noisy Data in Distant Supervision Relation Classification. NAACL'2019.
+Ran Wang, Yang Song, Xin-Yu Dai, MSNE: A Novel Markov Chain Sampling Strategy for Network Embedding. PAKDD'2019
+Danhao Zhu, Xin-Yu Dai, et.al. PCANE: Preserving Context Attributes for Network Embedding. PAKDD'2019
+Zhen Wu, Xin-Yu Dai, Cun-yan Yin, Shujian Huang, Jiajun Chen. Improving Review Representations with User Attention and Product Attention for Sentiment Classification. AAAI'2018.
+Hu, G. N., Dai, X. Y., et.al., Collaborative filtering with topic and social latent factors incorporating implicit feedback. ACM Transactions on Knowledge Discovery from Data (TKDD), 2018:12(2), 23.
+Guang-Neng Hu, Xin-Yu Dai. Integrating Reviews into Personalized Ranking for
+Cold Start Recommendation. PAKDD'2017
+Hong-Jian Xue, Xin-Yu Dai, Jianbing Zhang, Shujian Huang, Jiajun Chen. Deep Matrix Factorization Models for Recommender Systems. IJCAI'2017
+Hao Zhou, Yue Zhang, Chuan Chen, Shujian Huang, Xin-Yu Dai, and Jiajun Chen. A Neural Probabilistic Structured-Prediction Method for Transition-Based Natural Language Processing. Journal of Artificial Intelligence Research (JAIR), Volume 58, pages 703-729.
+Di Shang, Xin-Yu Dai, Yi Li, Shujiang Huang, Jiajun Chen, Tagging Chinese Microblogger via Sparse Feature Selection, IJCNN'2016.
+Song Yunya, Xin-Yu Dai, and Jia Wang. "Not all emotions are created equal: Expressive behavior of the networked public on China's social media site." Computers in Human Behavior, 2016(60): 525-533.
+Deyu Zhou, Haiyang Xu, Xinyu Dai, Yulan He, Unsupervised Storyline Extraction from News Articles. Proceedings of the 24th International Joint Conference on Artificial Intelligence (IJCAI'16), 2016.
+Shujian Huang, Huifeng Sun, Chengqi Zhao, Jinsong Su, Xin-Yu DAI, Jiajun Chen, Tree-state based Rule Selection Models for Hierarchical Phrase-based Machine Translation. Proceedings of the 24th International Joint Conference on Artificial Intelligence (IJCAI'16), 2016.
+Guang-Neng Hu, Xin-Yu Dai, Yunya Song, Shu-Jian Huang, Jia-Jun Chen, A Synthetic Approach for Recommendation: Combining Ratings, Social Relations, and Reviews. Proceedings of the 23rd International Joint Conference on Artificial Intelligence (IJCAI'15), Buenos Aires, Argentina, 2015.
+Xin-Yu Dai, Jian-Bing Zhang, Shu-Jian Huang, Jia-Jun Chen, and Zhi-Hua Zhou. Structured sparsity with group-graph regularization. In: Proceedings of the 29th AAAI Conference on Artificial Intelligence (AAAI'15), Austin, TX, 2015.
+Shujian Huang, Huadong Chen, Xinyu Dai, Jiajun Chen, Non-linear Learning for Statistical Machine Translation. Proceedings of the the 53rd Annual Meeting of the Association for Computational (ACL'2015), Beijing, China, 2015.
+Rui Xia, Cheng Wang, Xinyu Dai, and Tao Li, Co-training for Semi-supervised Sentiment Classification Based on Dual-view Bags-of-words Representation, Proceedings of the the 53rd Annual Meeting of the Association for Computational (ACL'2015), Beijing, China, 2015.
+Liqiang Niu Xin-Yu Dai, ShuJian Huang, Jiajun Chen. A Unified Framework for Jointly Learning Distributed Representations of Word and Attributes, In: Proc. of the 7th Asian Conference on Machine Learning (ACML'15), Hongkong, 2015, JMLR: W&CP.
+Dai Xin-Yu, Cheng Chuan, Huang Shujian, Chen Jiajun. "Sentiment Classification with Graph Sparsity Regularization." Computational Linguistics and Intelligent Text Processing (CiCling'15). Springer International Publishing, 2015. 140-151.
