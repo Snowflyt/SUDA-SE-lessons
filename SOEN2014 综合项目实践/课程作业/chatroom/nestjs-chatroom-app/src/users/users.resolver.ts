@@ -17,25 +17,14 @@ import { RequiresRole } from '@/common/auth/decorators/requires-role';
 import { SkipAuth } from '@/common/auth/decorators/skip-auth';
 import { EntityNotFoundException } from '@/exceptions/entity';
 
-const SameUserById: RequiresPredicate<
-  | { id: number }
-  | {
-      [key: string]: {
-        id: number;
-      };
-    }
-> = ({ userId }, operationArguments) =>
-  operationArguments.id !== undefined
-    ? userId === operationArguments.id
-    : userId === Object.values(operationArguments)[0].id;
+const SameUserById: RequiresPredicate<{ id: number } | Record<string, { id: number }>> =
+  ({ userId }, operationArguments) =>
+    operationArguments.id !== undefined
+      ? userId === operationArguments.id
+      : userId === Object.values(operationArguments)[0].id;
 
 const OperatingAnotherAdmin: RequiresPredicate<
-  | { id: number }
-  | {
-      [key: string]: {
-        id: number;
-      };
-    }
+  { id: number } | Record<string, { id: number }>
 > = async ({ userId }, operationArguments, prisma) => {
   const userToOperateId: number = operationArguments.id ?? Object.values(operationArguments)[0].id;
 
@@ -44,7 +33,7 @@ const OperatingAnotherAdmin: RequiresPredicate<
     include: { roles: true },
   });
   if (userToOperate === null) {
-    throw new EntityNotFoundException('User', 'id', userToOperateId);
+    throw new EntityNotFoundException("User", "id", userToOperateId);
   }
 
   return (
